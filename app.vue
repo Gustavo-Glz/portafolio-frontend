@@ -1,12 +1,15 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: (titlePage?: string) => titlePage ? `${titlePage} | Desarrollador Frontend` : 'Desarrollador Frontend'
+  titleTemplate: (titlePage?: string) => titlePage ? `Frontend - ${titlePage}` : 'Frontend',
+  htmlAttrs: {
+    lang: 'es'
+  }
 })
 </script>
 
 <template>
   <TheHeader />
-  <main class="container mx-auto">
+  <main class="container mx-auto mt-40">
     <NuxtPage />
   </main>
 </template>

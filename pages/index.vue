@@ -32,8 +32,8 @@ const getImgUrl = (name: string) =>
 </script>
 
 <template>
-  <section class="mt-28 grid gap-5 md:grid-cols-2 md:items-center">
-    <div class="flex flex-col gap-2">
+  <section class="grid gap-5 md:grid-cols-2 md:items-center">
+    <div class="flex flex-col gap-5">
       <h1 class="text-white text-2xl font-medium lg:text-3xl">
         Hola, soy Gustavo
       </h1>
@@ -64,7 +64,7 @@ const getImgUrl = (name: string) =>
     <img
       class="justify-self-center md:justify-self-end lg:w-4/5"
       src="@/assets/hero.svg"
-      alt=""
+      alt="hero"
     />
   </section>
   <section class="mt-20">
