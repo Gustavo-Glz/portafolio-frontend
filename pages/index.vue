@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const skills: string[] = [
-  "vue",
   "html",
   "css",
   "js",
   "ts",
+  "vue",
+  "nuxt-3",
   "react",
   "tailwind",
   "vuetify",
-  "bootstrap",
   "git",
 ];
 
@@ -50,6 +50,8 @@ const training = [
       <div class="my-5 flex gap-5">
         <NuxtLink
           class="text-white text-sm font-semibold border-solid border-2 border-transparent py-1.5 px-2 rounded-lg transition-all ease-in-out duration-500 shadow-lg hover:shadow-blue-600 border-gradient"
+          to="https://drive.google.com/file/d/1VhSVGCYaqszL774L7f_KsvRJ72PkU7O6/view?usp=share_link"
+          target="_blank"
         >
           Descargar CV
         </NuxtLink>

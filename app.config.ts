@@ -16,7 +16,8 @@ export default defineAppConfig({
       'linkedin': 'logos:linkedin-icon',
       'github': '',
       'gmail': 'logos:google-gmail',
-      'git-hub': 'bxl:github'
+      'git-hub': 'bxl:github',
+      'nuxt-3': 'logos:nuxt-icon',
     }
   }
 })

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', 'nuxt-icon'],
   routeRules: {
     '/': { static: true },
-    '/proyectos': { static: true },
+    '/proyectos': { ssr: false},
     '/contacto': { static: true }
   },
 })
