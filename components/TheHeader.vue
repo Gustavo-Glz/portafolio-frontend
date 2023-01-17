@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const logo = "<Gustavo/>";
+const logo = "<GustavoDev/>";
 const openMenu = ref<boolean>(false);
 </script>
 
@@ -19,7 +19,7 @@ const openMenu = ref<boolean>(false);
       <Icon name="oi:menu" />
     </button>
   </header>
-  <NavBar class="fixed top-24 bg-gray-900 w-full flex flex-col items-center transition-all ease-out duration-500 md:hidden" v-show="openMenu"/>
+  <NavBar class="fixed top-24 bg-gray-900 w-full flex flex-col items-center transition-all ease-in-out duration-700 md:hidden" v-show="openMenu"/>
 </template>
 
 

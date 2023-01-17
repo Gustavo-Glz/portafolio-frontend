@@ -1,18 +1,20 @@
 <script setup lang="ts">
-const skills = [
-  { name: "vue" },
-  { name: "html" },
-  { name: "css" },
-  { name: "javascript" },
-  { name: "typescript" },
-  { name: "react" },
-  { name: "tailwind" },
-  { name: "git" },
+const skills: string[] = [
+  "vue",
+  "html",
+  "css",
+  "js",
+  "ts",
+  "react",
+  "tailwind",
+  "vuetify",
+  "bootstrap",
+  "git",
 ];
 
 const training = [
   {
-    name: "Lic. en Ing. en Sistemas Computaciones",
+    name: "Lic. en Ing. en Sistemas Computacionales",
     platform: "Instituto de Estudios Superiores del Estado, Puebla, México",
   },
   { name: "Vue.js: De cero a experto", platform: "Udemy" },
@@ -26,9 +28,6 @@ const training = [
     platform: "Udemy",
   },
 ];
-
-const getImgUrl = (name: string) =>
-  new URL(`../assets/${name}.svg`, import.meta.url).href;
 </script>
 
 <template>
@@ -49,16 +48,12 @@ const getImgUrl = (name: string) =>
         de aprender de manera rápida.
       </p>
       <div class="my-5 flex gap-5">
-        <a
+        <NuxtLink
           class="text-white text-sm font-semibold border-solid border-2 border-transparent py-1.5 px-2 rounded-lg transition-all ease-in-out duration-500 shadow-lg hover:shadow-blue-600 border-gradient"
-          href=""
-          >Descargar CV</a
         >
-        <a
-          class="text-white text-sm font-semibold border-solid border-2 border-transparent py-1.5 px-2 rounded-lg transition-all ease-in-out duration-500 shadow-lg hover:shadow-blue-600 border-gradient"
-          href=""
-          >Contacto</a
-        >
+          Descargar CV
+        </NuxtLink>
+        <Redes />
       </div>
     </div>
     <img
@@ -74,13 +69,13 @@ const getImgUrl = (name: string) =>
       Habilidades
     </h2>
     <div
-      class="mt-10 grid grid-cols-4 gap-10 justify-items-center lg:grid-cols-8"
+      class="mt-10 grid grid-cols-4 gap-10 justify-items-center lg:grid-cols-6"
     >
-      <img
-        class="w-20 cursor-pointer transition-all ease-out duration-500 hover:scale-125"
-        v-for="{ name } in skills"
-        :src="getImgUrl(name)"
-        :alt="name"
+      <Icon
+        class="cursor-pointer transition-all ease-in-out duration-500 hover:scale-125"
+        v-for="skill in skills"
+        :name="skill"
+        size="4rem"
       />
     </div>
   </section>
@@ -91,18 +86,21 @@ const getImgUrl = (name: string) =>
       Formación
     </h2>
     <ul class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-      <li class="p-5 cursor-pointer border-solid border-2 border-transparent border-gradient rounded-lg transition-all ease-out duration-500 hover:scale-105" v-for="{ name, platform } in training">
+      <li
+        class="p-5 cursor-pointer border-solid border-2 border-transparent border-gradient rounded-lg transition-all ease-out duration-700 hover:scale-105"
+        v-for="{ name, platform } in training"
+      >
         <h3 class="text-white font-semibold">{{ name }}</h3>
-        <h4 class="text-white text-sm ">{{ platform }}</h4>
+        <h4 class="text-white text-sm">{{ platform }}</h4>
       </li>
     </ul>
   </section>
 </template>
 
-<style scoped>
+<style>
 .border-gradient {
   background: linear-gradient(90deg, #111827, #111827),
-              linear-gradient(to bottom right, #42d392, #2563eb);
+    linear-gradient(to bottom right, #42d392, #2563eb);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
