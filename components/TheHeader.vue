@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const logo = "<GustavoDev/>";
+const logo = "<GustavoDev />";
 const openMenu = ref<boolean>(false);
 </script>
 

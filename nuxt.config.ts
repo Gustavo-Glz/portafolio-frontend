@@ -6,4 +6,7 @@ export default defineNuxtConfig({
     '/proyectos': { ssr: false},
     '/contacto': { static: true }
   },
+  tailwindcss: {
+    viewer: false
+  }
 })
