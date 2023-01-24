@@ -2,6 +2,7 @@
 useHead({
   title: "Proyectos",
 });
+
 </script>
 
 <template>
@@ -29,3 +30,4 @@ useHead({
     </div>
   </section>
 </template>
+

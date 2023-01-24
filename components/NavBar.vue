@@ -4,6 +4,7 @@ const urls = [
   { nombre: "Proyectos", path: "/proyectos" },
   { nombre: "Contacto", path: "/contacto" },
 ];
+
 </script>
 
 <template>
@@ -12,6 +13,7 @@ const urls = [
       class="text-white text-sm uppercase font-bold py-10 md:py-0"
       v-for="{ nombre, path } in urls"
       :to="path"
+      @click="$emit('link-click')"
     >
       {{ nombre }}
     </NuxtLink>

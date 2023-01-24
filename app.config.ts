@@ -11,7 +11,6 @@ export default defineAppConfig({
       'react': 'logos:react',
       'tailwind': 'logos:tailwindcss-icon',
       'vuetify': 'logos:vuetifyjs',
-      'bootstrap': 'logos:bootstrap',
       'git': 'logos:git-icon',
       'linkedin': 'logos:linkedin-icon',
       'github': '',
