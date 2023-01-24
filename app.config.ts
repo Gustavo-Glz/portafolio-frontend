@@ -17,6 +17,8 @@ export default defineAppConfig({
       'gmail': 'logos:google-gmail',
       'git-hub': 'bxl:github',
       'nuxt-3': 'logos:nuxt-icon',
+      'close': 'fa6-solid:x',
+      'menu': 'fa6-solid:bars'
     }
   }
 })
