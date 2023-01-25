@@ -22,7 +22,7 @@ const getImgUrl = (src: string) =>
         size="2rem"
       />
     </div>
-    <img :src="getImgUrl(props.src)" :alt="props.titulo" />
+    <nuxt-img :src="getImgUrl(props.src)" :alt="props.titulo" loading="lazy" />
     <h3 class="text-white text-sm text-center font-bold uppercase">
       {{ props.titulo }}
     </h3>

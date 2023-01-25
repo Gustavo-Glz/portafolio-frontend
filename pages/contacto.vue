@@ -38,7 +38,11 @@ useHead({
         </div>
         <Redes />
       </div>
-      <img class="md:w-1/2 lg:w-2/5" src="@/assets/contacto.svg" alt="" />
+      <nuxt-img
+        class="md:w-1/2 lg:w-2/5"
+        src="/contacto.svg"
+        alt="contacto imagen"
+      />
     </div>
   </section>
 </template>

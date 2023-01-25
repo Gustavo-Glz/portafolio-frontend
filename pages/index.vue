@@ -58,10 +58,10 @@ const training = [
         <Redes />
       </div>
     </div>
-    <img
+    <nuxt-img
       class="justify-self-center md:justify-self-end lg:w-4/5"
-      src="@/assets/hero.svg"
-      alt="hero"
+      src="/hero.svg"
+      alt="hero imagen"
     />
   </section>
   <section class="mt-20">
