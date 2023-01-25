@@ -14,7 +14,7 @@ const openMenu = ref<boolean>(false);
       {{ logo }}
     </NuxtLink>
     <NavBar class="hidden md:flex gap-10" />
-    <button class="text-white p-1 md:hidden" @click="openMenu = !openMenu">
+    <button class="text-white p-1 md:hidden" @click="openMenu = !openMenu" aria-label="btn-menu">
       <Icon v-if="!openMenu" name="menu" size="2rem" />
       <Icon v-else name="close" size="2rem" />
     </button>
