@@ -10,7 +10,7 @@ const urls = [
 <template>
   <nav>
     <NuxtLink
-      class="text-white text-sm uppercase font-bold py-10 md:py-0"
+      class="text-white uppercase font-bold py-10 md:py-0 md:text-sm"
       v-for="{ nombre, path } in urls"
       :to="path"
       @click="$emit('link-click')"

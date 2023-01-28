@@ -33,15 +33,17 @@ const training = [
 <template>
   <section class="grid gap-5 md:grid-cols-2 md:items-center">
     <div class="flex flex-col gap-5">
-      <h1 class="text-white text-2xl font-medium lg:text-3xl">
+      <h1 class="text-white text-2xl font-bold lg:text-3xl">
         Hola, soy Gustavo
       </h1>
       <h2
-        class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-3xl font-semibold lg:text-4xl"
+        class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-3xl font-bold lg:text-4xl"
       >
         Desarrollador Frontend
       </h2>
-      <p class="text-white text-sm text-justify leading-relaxed lg:text-lg">
+      <p
+        class="text-white text-sm text-justify font-semibold leading-relaxed lg:text-lg"
+      >
         Soy un profesional responsable y eficiente en busca de una oportunidad
         como desarrollador frontend que me permita obtener experiencia laboral.
         Cuento con habilidades de comunicación, trabajo en equipo y la capacidad
@@ -66,7 +68,7 @@ const training = [
   </section>
   <section class="mt-20">
     <h2
-      class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-2xl font-semibold lg:text-3xl"
+      class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-2xl font-bold lg:text-3xl"
     >
       Habilidades
     </h2>
@@ -83,19 +85,18 @@ const training = [
   </section>
   <section class="my-20">
     <h2
-      class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-2xl font-semibold lg:text-3xl"
+      class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-2xl font-bold lg:text-3xl"
     >
       Formación
     </h2>
-    <ul class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-      <li
+    <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+      <CardFormacion
         class="p-5 cursor-pointer border-solid border-2 border-transparent border-gradient rounded-lg transition-all ease-out duration-700 hover:scale-105"
         v-for="{ name, platform } in training"
-      >
-        <h3 class="text-white font-semibold">{{ name }}</h3>
-        <h4 class="text-white text-sm">{{ platform }}</h4>
-      </li>
-    </ul>
+        :name="name"
+        :platform="platform"
+      />
+    </div>
   </section>
 </template>
 

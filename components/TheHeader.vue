@@ -8,15 +8,15 @@ const openMenu = ref<boolean>(false);
     class="h-24 fixed top-0 right-0 left-0 bottom-0 bg-gray-900 z-50 container mx-auto flex justify-between items-center"
   >
     <NuxtLink
-      class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-2xl font-bold md:text-4xl"
+      class="bg-clip-text text-transparent bg-gradient-to-r from-[#42d392] to-blue-600 text-2xl font-bold md:text-3xl"
       to="/"
     >
       {{ logo }}
     </NuxtLink>
     <NavBar class="hidden md:flex gap-10" />
     <button class="text-white p-1 md:hidden" @click="openMenu = !openMenu" aria-label="btn-menu">
-      <Icon v-if="!openMenu" name="menu" size="2rem" />
-      <Icon v-else name="close" size="2rem" />
+      <Icon v-if="!openMenu" name="menu" size="1.8rem" />
+      <Icon v-else name="close" size="1.8rem" />
     </button>
   </header>
   <NavBar
@@ -25,3 +25,5 @@ const openMenu = ref<boolean>(false);
     @link-click="openMenu = !openMenu"
   />
 </template>
+
+

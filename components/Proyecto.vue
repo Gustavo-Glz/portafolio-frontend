@@ -28,7 +28,7 @@ const getImgUrl = (src: string) =>
     </h3>
     <div class="mb-5 flex gap-5 justify-center items-center">
       <NuxtLink
-        class="text-white text-sm font-semibold border-solid border-2 border-transparent py-1.5 px-2 rounded-lg transition-all ease-in-out duration-500 shadow-lg hover:shadow-blue-600 border-gradient"
+        class="text-white text-sm font-bold border-solid border-2 border-transparent py-1.5 px-2 rounded-lg transition-all ease-in-out duration-500 shadow-lg hover:shadow-blue-600 border-gradient"
         :to="props.code"
         target="_blank"
       >
