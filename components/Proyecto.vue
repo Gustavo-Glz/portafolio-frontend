@@ -7,9 +7,6 @@ interface Props {
   tecnologias: string[];
 }
 const props = defineProps<Props>();
-
-const getImgUrl = (src: string) =>
-  new URL(`/assets/${src}.png`, import.meta.url).href;
 </script>
 
 <template>
@@ -22,7 +19,7 @@ const getImgUrl = (src: string) =>
         size="2rem"
       />
     </div>
-    <nuxt-img :src="getImgUrl(props.src)" :alt="props.titulo" loading="lazy" />
+    <nuxt-img :src="`/${src}.png`" :alt="props.titulo" loading="lazy" />
     <h3 class="text-white text-sm text-center font-bold uppercase">
       {{ props.titulo }}
     </h3>

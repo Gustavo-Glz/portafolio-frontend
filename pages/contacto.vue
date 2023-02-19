@@ -13,7 +13,7 @@ useHead({
     </h2>
     <div class="my-10 flex flex-col gap-10 md:flex-row md:items-center">
       <div class="text-white flex flex-col gap-5">
-        <h3 class="font-semibold text-justify">
+        <h3 class="leading-relaxed lg:text-lg font-semibold text-justify">
           Actualmente me encuentro en busca de nuevas oportunidades laborales.
           Mi bandeja de entrada siempre está abierta, ya sea que tenga una
           pregunta o solo quiera saludar.
